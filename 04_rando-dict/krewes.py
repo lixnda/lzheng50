@@ -8,5 +8,5 @@ time spent: 0.2
 """
 
 import random
-krewes = {3:['Linda', 'Michelle','Ryan'], 42:['Linda', 'Michelle', 'Ryan'], 888:['Linda', 'Michelle', 'Ryan']}
-print(random.choice(random.choice(krewes)))
+krewes = {3:['Linda'], 42:['Michelle'], 888:['Ryan']}
+print()
