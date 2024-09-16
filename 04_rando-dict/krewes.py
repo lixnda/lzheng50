@@ -24,4 +24,5 @@ krewes = {
     }
 
 #random choice only works with list, hence why the dict was converted
+#.values() return values of dictionary without the key (.items() does otherwise)
 print(random.choice(list(random.choice(list(krewes.values())))))
