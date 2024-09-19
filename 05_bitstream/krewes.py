@@ -22,16 +22,13 @@ for i in range(len(data) -1):
     if not(i != 0 and data[i] == "$" and data[i - 1] == "$"):
         outputdata = outputdata + data[i]
 
-print (outputdata)
-
 data = outputdata
 table = data.split("$")
-#print(table)
 keyVal = 0
 
 
 #brute force to remove index 0
-i = 1
+i = 0
 while i<(len(table)-1):
     if(table[i].isnumeric()):
         keyVal = int(table[i])
