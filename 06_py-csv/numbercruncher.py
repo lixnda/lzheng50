@@ -4,7 +4,7 @@ Mac n Cheezits
 SoftDev
 K<06> -- CSV files
 2024-09-18
-time spent: 
+time spent: 1 
 
 """
 
