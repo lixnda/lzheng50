@@ -14,3 +14,5 @@ def hello_world():
 if __name__ == "__main__":      # true if this file NOT imported
     app.debug = True            # enable auto-reload upon code change
     app.run()
+
+#This file is run from the main module and if run from another one, like if its imported, will not run the method and the app.

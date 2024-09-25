@@ -10,6 +10,8 @@ def hello_world():
     print("about to print __name__...")
     print(__name__)                   #where will this go?
     return "No hablo queso!"
+    
 
-app.debug = True
+app.debug = True                      #Before, the debugger was set to false by default, however, there is now a debugger
+                                      #pin in the terminal.
 app.run()
