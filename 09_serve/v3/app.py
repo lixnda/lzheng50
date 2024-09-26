@@ -1,6 +1,12 @@
-# Clyde 'Thluffy' Sinclair
-# SoftDev
-# September 2024
+"""
+Linda Zheng
+TEAMNAME
+SoftDev
+K<08> -- webapp and flask
+2024-09-24
+time spent: 0.3 
+
+"""
 
 from flask import Flask
 app = Flask(__name__)                 #create instance of class Flask
