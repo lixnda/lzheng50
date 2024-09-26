@@ -1,0 +1,5 @@
+Question one- the one in foo. We predicted that it would show up as basic HTML text but it actually downloaded the file.
+
+Question two- the one in foo.html. We predicted that it would print everything but most of the code was hidden by the <!-- and -->. This can be seen through the inspect screen.
+
+You can override the routes by setting it in the main function aka here. In here the second statment overrides the function and prints a random letter instead of the Is this plaintext, through?.
