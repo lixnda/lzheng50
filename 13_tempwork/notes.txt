@@ -1,0 +1,3 @@
+QCC:
+Should every app.py have an app route at /? Is it necessary?
+How does jinja work? How is it formatted?
