@@ -7,6 +7,10 @@
  -->
 
 <html>
+<style>
+	table, th, td{border: 1px solid black;
+}
+</style>
     <head>
     </head>
     <body>
@@ -16,7 +20,7 @@
         <h2>
             {{ rando }}
         </h2>
-        {{ table }}
+        {{ table | safe}}
 
     </body>
 </html>

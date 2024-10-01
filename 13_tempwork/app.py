@@ -49,7 +49,7 @@ def randO(types):
 
 def table():
     occupation = (randO(2))
-    output = "<table><tr><th>Job Class</th><th>Percentage></th><tr>"
+    output = "<table><tr><th>Job Class</th><th>Percentage</th><tr>"
     for i in occupation:
         output=output+"<tr><td>"+i+"</td><td>"+occupation[i]+"</td></tr>"
     output=output + "</table>"
@@ -61,7 +61,7 @@ def main():
 
 @app.route("/wdywtbwygp")
 def tempoo():
-    return render_template('tablified.html', Teeem="ducky123: Linda Zheng, Michelle Zhu", rando=rand0(1) table=table())
+    return render_template('tablified.html', Teeem="ducky123: Linda Zheng, Michelle Zhu", rando=randO(1), table=table())
 
 app.debug = True
 app.run()

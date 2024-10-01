@@ -1,3 +1,14 @@
 QCC:
 Should every app.py have an app route at /? Is it necessary?
 How does jinja work? How is it formatted?
+
+DISCO:
+Jinja is a python templating engine that allows dynamic generation of HTML or ot
+her markup by embedding Python-like expressions and logic into our static files
+(like HTML). Jinja combines templates (HTML files) with dynamic data to render a
+ final doc.
+We can insert Python variables into HTML using {{ }}
+Contain for loops or if statements enclosed within {% %}
+render_template triggers Jinja to render the HTML page
+
+To ensure html generated from app.py is rendered you need to ensure jinja includes {{ variable_name | safe }} is indicated
