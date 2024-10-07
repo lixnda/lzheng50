@@ -6,11 +6,13 @@ K<13> -- WRap up
 2024-09-30
 time spent:
 """
-
+"""
 from flask import Flask, render_template
 import random
 
 app = Flask(__name__)
+"""
+import random
 
 def randO(types):
     file = open("data/occupations.csv")
@@ -36,9 +38,11 @@ def randO(types):
         
         #replacing placeholder with comma
         splitted[0] = splitted[0].replace("<>", ",")
+        
         occupation[splitted[0]] = splitted[1]
         weight.append(float(splitted[1]))
-
+        
+    print(data)
      
     randO = random.choices(list(occupation), weights=weight, k=1)
     
@@ -51,10 +55,12 @@ def table():
     occupation = (randO(2))
     output = "<table><tr><th>Job Class</th><th>Percentage</th><tr>"
     for i in occupation:
-        output=output+"<tr><td>"+i+"</td><td>"+occupation[i]+"</td></tr>"
+        output=output+"<tr><td>"+i+"</td><td>"+occupation[i]+"</td><td>"
     output=output + "</table>"
     return output
 
+print(table())
+"""
 @app.route("/")
 def main():
     return "head to / wdywtbwygp"
@@ -65,3 +71,4 @@ def tempoo():
 
 app.debug = True
 app.run()
+"""

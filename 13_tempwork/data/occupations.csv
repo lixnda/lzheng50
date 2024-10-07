@@ -1,24 +1,24 @@
-Job Class,Percentage
-Management,6.1
-Business and Financial operations,5
-Computer and Mathematical,2.7
-Architecture and Engineering,1.7
-"Life, Physical and Social Science",0.9
-Community and Social Service,1.6
-Legal,0.8
-"Education, training and library",6.1
-"Arts, design, entertainment, sports and media",1.7
-Healthcare practioners and technical,5.5
-Healthcare support,2.8
-Protective service,2.3
-Food preparation and serving,8.3
-Building and grounds cleaning and maintenance,3.7
-Personal care and service,4
-Sales,10.2
-Office and administrative support,15.1
-"Farming, fishing and forestry",0.6
-Construction and extraction,4.3
-"Installation, maintenance and repair",3.8
-Production,6.1
-Transportation and material moving,6.5
-Total,99.8
+Job Class,Percentage,link
+Management,6.1,https://www.indeed.com/hire/job-description/manager
+Business and Financial operations,5,https://dealhub.io/glossary/finance-operations/
+Computer and Mathematical,2.7,https://www.nebrwesleyan.edu/academics/majors-and-minors/mathematics-and-computer-science/math-and-data-analytics-careers
+Architecture and Engineering,1.7,https://archinect.com/jobs
+"Life, Physical and Social Science",0.9,https://www.pdx.edu/careers/what-can-i-do-degree-social-science
+Community and Social Service,1.6,https://wearebcs.org/careers/
+Legal,0.8,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bls.gov/ooh/legal/lawyers.htm&ved=2ahUKEwiuxaeDwfyIAxWcMmIAHdWXGngQFnoECBcQAw&usg=AOvVaw2sPzz2VZDkhAQseu7Xf4WL
+"Education, training and library",6.1,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.betterteam.com/teacher-job-description&ved=2ahUKEwiO3I6MwfyIAxWKKFkFHU-PEwoQFnoECD4QAQ&usg=AOvVaw0eFXYTYSrp6Gk0foZuJzUe
+"Arts, design, entertainment, sports and media",1.7,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bls.gov/ooh/arts-and-design/craft-and-fine-artists.htm&ved=2ahUKEwir0ruTwfyIAxU5ElkFHUtNGW4QFnoECDgQAw&usg=AOvVaw1nBCr9h1WMeLcL01Ozh32Q
+Healthcare practioners and technical,5.5,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bls.gov/ooh/healthcare/physicians-and-surgeons.htm&ved=2ahUKEwjTkvubwfyIAxXDGVkFHR8TFygQFnoECDsQAw&usg=AOvVaw2f8BmUYzB6LJPNyompxoS9
+Healthcare support,2.8,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.bls.gov/ooh/healthcare/registered-nurses.htm&ved=2ahUKEwic-f6hwfyIAxX3D1kFHZQ0K3MQFnoECDgQAw&usg=AOvVaw1A7CJ1S8keUj4tG7yS_T8p
+Protective service,2.3,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nyc.gov/site/acs/about/becoming-cps.page&ved=2ahUKEwiBg_2nwfyIAxUvF1kFHdUlIj4QFnoECBQQAw&usg=AOvVaw0m4GlmRoXcqMD0wC1MMOtZ
+Food preparation and serving,8.3,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.escapelodging.com/jobdocs/ChefJobDescription.pdf&ved=2ahUKEwiFmL-uwfyIAxXJFVkFHeOcF-UQFnoECCEQAQ&usg=AOvVaw1NtrrP6W_36SUvoxdKXiw_
+Building and grounds cleaning and maintenance,3.7,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.comeet.com/resources/job-descriptions/janitor&ved=2ahUKEwjUjsW1wfyIAxVpF1kFHZLIMF0QFnoECDcQAw&usg=AOvVaw0ritbSwniGZeYS9rEqKpzo
+Personal care and service,4,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.gonefco.com/catalog/shop/Janitorial-Cleaning/Hand-Personal-Care/dept-B5T%3Fa%3D1&ved=2ahUKEwit8oG9wfyIAxUlKVkFHXNaMz4QFnoECBgQAQ&usg=AOvVaw1xjoLT9aziCAvXb3-FyWQq
+Sales,10.2,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://business.linkedin.com/talent-solutions/resources/how-to-hire-guides/sales-representative/job-description&ved=2ahUKEwip8rnCwfyIAxVgFlkFHby3AZEQFnoECDwQAQ&usg=AOvVaw2F_Ay6DRSDpfIF5nVpjva8
+Office and administrative support,15.1,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.indeed.com/hire/job-description/office-assistant&ved=2ahUKEwjwxLfIwfyIAxVDEVkFHXY-BHkQFnoECBAQAQ&usg=AOvVaw00bjIf7fO3o0aRCOapjZEu
+"Farming, fishing and forestry",0.6,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.indeed.com/career-advice/finding-a-job/work-as-a-farmer&ved=2ahUKEwiBl7jNwfyIAxW1LFkFHXLGBVgQFnoECAoQAw&usg=AOvVaw2X75LIXedzQGJengN0pgq8
+Construction and extraction,4.3,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://resources.workable.com/construction-worker-job-description&ved=2ahUKEwiWiPPWwfyIAxWWK1kFHXa0DfQQFnoECAwQAw&usg=AOvVaw1F7D_iQN1_hwN_JEkVVNJj
+"Installation, maintenance and repair",3.8,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://hiring.monster.com/resources/job-descriptions/maintenance/maintenance-worker/&ved=2ahUKEwii3brcwfyIAxUoM1kFHdc_C5IQFnoECCsQAQ&usg=AOvVaw0TtQoMUVRUvExA5CwJk1HA
+Production,6.1,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.indeed.com/hire/job-description/production-worker&ved=2ahUKEwi0oZXiwfyIAxU_F1kFHaelL1MQFnoECBoQAQ&usg=AOvVaw3UexRjLyiLWMLrVRDbWkSt
+Transportation and material moving,6.5,https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.betterteam.com/transportation-specialist-job-description&ved=2ahUKEwi3lfPrwfyIAxWyFFkFHUnGFnsQFnoECBoQAw&usg=AOvVaw2TK1ZVBVrQm7JrfINW1pYi
+Total,99.8,
