@@ -1,0 +1,15 @@
+QCC:
+ *what is the significance of DIAG?
+ *what function is app.py using when requesting headers? does the "***" play a role? What does it even do. 
+	->uncomment code to test
+
+ *when running testmodO.py, where does the return statement go if we aren't running a webapp? The print statements do, however, get printed in the terminal
+
+DISCO:
+ *form seems to be a built in feature of html, and having action="/auth" allows a input text box. However, in what way can it be used to log a certain user in?
+
+*by requesting headers, the terminal returns several lines of information regarding the current machine and browser.
+
+*when uncommenting the comment that requests a username, the webapp returns a KeyError: 'username'
+	->but since users have to enter the username in the page, how is it possible for variable to have value before user input?
+	->having this request in the autherization page does work, however. I'm assuming because we now have information on the username that the user previously submitted
