@@ -4,15 +4,12 @@ ducky123
 SoftDev
 K<13> -- WRap up
 2024-09-30
-time spent:
-"""
+time spent: 1
 """
 from flask import Flask, render_template
 import random
 
 app = Flask(__name__)
-"""
-import random
 
 def randO(types):
     file = open("data/occupations.csv")
@@ -20,7 +17,7 @@ def randO(types):
     data = file.read().strip().split("\n")
 
 
-    occupation = {}
+    occupation = []
     weight = []
 
     for i in range(1, len(data)-1):
@@ -39,36 +36,34 @@ def randO(types):
         #replacing placeholder with comma
         splitted[0] = splitted[0].replace("<>", ",")
         
-        occupation[splitted[0]] = splitted[1]
+        occupation.append(splitted)
         weight.append(float(splitted[1]))
-        
-    print(data)
      
-    randO = random.choices(list(occupation), weights=weight, k=1)
+    randO = random.choices((occupation), weights=weight, k=1)
     
     if(types==1):
         return(randO)
     else:
         return(occupation)
+    print(randO)
 
 def table():
     occupation = (randO(2))
     output = "<table><tr><th>Job Class</th><th>Percentage</th><tr>"
     for i in occupation:
-        output=output+"<tr><td>"+i+"</td><td>"+occupation[i]+"</td><td>"
+        output=output+"<tr><td><a href=\""+i[2]+"\">"+i[0]+"</a></td><td>"+i[1]+"</td>"
     output=output + "</table>"
     return output
 
-print(table())
-"""
+#print(table())
+
 @app.route("/")
 def main():
     return "head to / wdywtbwygp"
 
 @app.route("/wdywtbwygp")
 def tempoo():
-    return render_template('tablified.html', Teeem="ducky123: Linda Zheng, Michelle Zhu", rando=randO(1), table=table())
+    return render_template('tablified.html', Teeem="ducky123: Linda Zheng, Michelle Zhu", rando=randO(1)[0][0], table=table())
 
 app.debug = True
 app.run()
-"""
