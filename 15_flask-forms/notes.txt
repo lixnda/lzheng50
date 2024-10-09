@@ -1,0 +1,6 @@
+DISCO:
+action="/auth": specifies where the form data will be sent when the form is submitted.
+<input type="text" name="username">: creates a single-line text input box where the user can type information.
+The name attribute in name="username" defines the key that will be used to send this form data to the server.
+<input type="submit" name="sub1">:
+type="submit": This creates a button that submits the form when clicked.
