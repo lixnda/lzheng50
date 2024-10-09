@@ -21,14 +21,19 @@ from flask import request           #facilitate form submission
 
 app = Flask(__name__)    #create Flask object
 
-@app.route("/", methods=['GET'])
+@app.route("/", methods=['GET', 'POST'])
 def disp_loginpage():
     return render_template( 'login.html' )
 
-@app.route("/auth", methods=['GET'])
+@app.route("/auth", methods=['GET', 'POST'])
 def authenticate():
-    username = request.args['username']
-    return render_template( 'response.html', name = username)
+    if(request.method=='GET'):
+        name = "GET: Used to retrieve data from the server"
+        username = request.args['username']
+    if(request.method=='POST'):
+        name = "POST: Used to send data to the server for processing (like submitting a form or uploading a file)"
+        username = request.form['username']
+    return render_template( 'response.html', name = username, whichTYPE=name)
 
 
 if __name__ == "__main__": #false if this file imported as module
