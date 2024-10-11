@@ -7,17 +7,32 @@ K<16> -- cookies n crumble (the code crumbles)
 time spent: 
 """
 
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, session
 
-app = Flask(__name__)
+app = Flask(__name__)    #create Flask object
 
-@app.route("/", methods=['POST'])
-def login_page():
-    render_template('login.html')
+app.secret_key = 
+
+@app.route("/")
+def main():
+    if 'name' in session:
+        return f'Logged in as {session["username"]}'
+    return 'You are not logged in'
+
+@app.route('/login')
+def disp_loginpage():
+    print(app)
+    print(request)
+    print(request.args)
+    return render_template( 'login.html' )
     
 @app.route("/auth", methods=['POST'])
-def auth_page():
-    render_template('response.html', name=request.form['username'])
+def authenticate():
+    print(app)
+    print(request)
+    print(request.args)
+    return render_template('response.html', name=request.cookies.get('username'))
     
-app.run()
-app.debug()==True
+if __name__ == "__main__":
+    app.debug = True 
+    app.run()
