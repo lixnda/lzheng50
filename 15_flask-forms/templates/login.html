@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <!--
-  Linda, Ryan, Michelle
-  Boas
+  Michelle, Tanzeem, Linda
+  Purple Tortoise
   SoftDev
-  Oct 2024
+  Sep 2024
  -->
 
 
@@ -15,15 +15,23 @@
 
   <body>
     <h1>
-      Boas: Linda, Ryan, Michelle
+      Purple Tortoise: Michelle, Tanzeem, Linda
     </h1>
     <h3>
-      Enter your username below to proceed.
+      Enter your username (GET)
     </h3>
-    <form action="/auth">
+    <form action="/auth" method="GET">
       <input type="text" name="username">
       <input type="submit" name="sub1">
     </form>
+    <h3>
+        Enter your username (POST)
+    </h3>
+    <form action="/auth" method="POST">
+      <input type="text" name="username">
+      <input type="submit" name="sub1">
+    </form>
+
     <br>
   </body>
 
