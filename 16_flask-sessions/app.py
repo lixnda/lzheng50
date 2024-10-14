@@ -1,10 +1,10 @@
 """
-Linda Zheng
-ducky123
+Linda Zheng, Ryan, Michelle
+boas
 SoftDev
 K<16> -- cookies n crumble (the code crumbles)
 2024-10-10
-time spent: 
+time spent: 1
 """
 from flask import Flask, render_template, request, session
 import secrets

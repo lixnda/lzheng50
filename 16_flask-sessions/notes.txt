@@ -1,0 +1,14 @@
+Linda Zheng, Ryan, Michelle
+boas
+SoftDev
+K<16> -- cookies n crumble (the code crumbles)
+2024-10-10
+time spent: 2
+
+QCC:
+*When does the session key change?
+*When users need to submit passwords as a part of their login, where is there stored when sessions typically end?
+
+DISCO:
+* When loading an url, you are using a get request, so you need to make sure that the app.route is able to hand the get method.
+* Forms use the post request as a way to make the information submitted more secure
