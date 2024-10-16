@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+	<title>
+		is dis right?
+	</title>
+    <head>
+        <style>
+		html{
+	background-color: gray;
+}
+
+body{
+	font-family: Arial, sans-serif;
+	margin: 100px;
+	padding: 0px;
+	background-color:#888888;
+}
+
+h1{
+	font-size: 40px;
+	padding:10px;
+	background-color: LightGray;
+	color: white;
+	text-align:center;
+}
+
+.grid-elements{
+	display:grid;
+	grid-template-columns:250px 500px 500px;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+		"headernav header header"
+		"sidenav main main";
+}
+
+.header{
+	padding: 10px;
+	/*grid-column:2;
+	grid row: 1;*/
+	grid-area: header;
+	font-size:30px;
+	font-weight:bold;
+}
+
+.headernav{
+	padding: 10px;
+
+	grid-area:headernav;
+	font-size:25px;
+	font-weight:bold;
+}
+
+.sidenav{
+	padding: 10px;
+	/*grid-column: 1;
+	grid row: 2/4;*/
+	grid-area:sidenav;
+	font-size:25px;
+	color: lightgray;
+}
+
+.main{
+	padding: 10px;
+	/*grid-column:2/4;
+	grid row: 2/4;*/
+	grid-area:main;
+	font-size:20px;
+}
+
+footer{
+	text-align:right;
+	background-color:dimgray;
+	font-size:20px;
+	padding:10px;
+	color:gray;
+}
+
+	</style>
+    </head>
+    <body>
+	<h1>h1 foo</h1>
+	<div class="grid-elements">
+		
+		<div class="header">main foo heading One</div>
+		<div class="headernav">nav foo</div>
+		<div class="sidenav">dis<br>dat<br>de udda ting</div>
+		<div class="main">Lorem ipsum odor amet, consectetuer adipiscing elit. Ac suspendisse morbi ultricies mattis et posuere cursus. Dis lobortis vulputate feugiat fringilla augue. Odio cubilia duis convallis id scelerisque aliquam accumsan. Aliquam natoque facilisis at luctus, nunc id proin taciti venenatis. Curae etiam dictumst nullam faucibus consequat dignissim leo. Venenatis fringilla sagittis auctor vulputate, nibh suscipit enim.
+
+Vel diam lobortis vehicula tempor vulputate porttitor integer iaculis. Scelerisque pellentesque viverra tristique nibh tellus dignissim penatibus nisl nibh. Taciti nisl at venenatis sapien semper hac ullamcorper. Ultrices eleifend mauris purus ipsum; mattis lacinia maecenas. Tellus natoque congue nostra ad sit non. Malesuada nisl tincidunt curabitur; natoque hendrerit fames libero. Sem fames commodo mauris tempor pulvinar.</div>
+	</div>
+	<footer>Copyright©Linda Zheng</footer>
+     </body>
+
+</html>

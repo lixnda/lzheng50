@@ -4,7 +4,7 @@ boas
 SoftDev
 K<16> -- cookies n crumble (the code crumbles)
 2024-10-10
-time spent: 1
+time spent: 2
 """
 from flask import Flask, render_template, request, session
 import secrets
