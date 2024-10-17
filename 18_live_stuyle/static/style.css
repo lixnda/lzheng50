@@ -52,3 +52,18 @@ h1{
 	color: lightgray;
 }
 
+.main{
+	padding: 10px;
+	/*grid-column:2/4;
+	grid row: 2/4;*/
+	grid-area:main;
+	font-size:20px;
+}
+
+footer{
+	text-align:right;
+	background-color:dimgray;
+	font-size:20px;
+	padding:10px;
+	color:gray;
+}
