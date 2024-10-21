@@ -18,16 +18,37 @@ c = db.cursor()               #facilitate db ops -- you will use cursor to trigg
 """
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 < < < INSERT YOUR TEAM'S DB-POPULATING CODE HERE > > >
-CREATE TABLE roster(name TEXT, userid INTEGER)
+c.execute("CREATE TABLE roster (name TEXT, age INTERGER, id INTEGER)")
+c.execute("CREATE TABLE course (code TEXT, mark INTERGER, id INTEGER)")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
-openFile = open('students.csv', 'r')
-csvFile = csv.reader(openFile)
 
-command = "INSERT INTO roster" # test SQL stmt in sqlite3 shell, save as string
-c.execute(command)    # run SQL statement
+file = open('students.csv', mode='r', newline='')
+csv_reader = csv.DictReader(file) #reads csv file as an ordered dictionary
+for row in csv_reader:
+    #print(row)
+    name = (row['name'])
+    age = (row['age'])
+    ids = (row['id'])
+    command = "INSERT INTO roster VALUES (?, ?, ?)" #the ? denotate that it should take the valuable of variables in previous lines
+    c.execute(command, (name, age, ids))    # run SQL statement (also ensures it knows what values previous parameters refering to?)
+    
 
+file = open('courses.csv', mode='r', newline='')
+csv_reader = csv.DictReader(file) #reads csv file as an ordered dictionary
+for row in csv_reader:
+    code = (row['code'])
+    mark = (row['mark'])
+    ids = (row['id'])
+    command = "INSERT INTO course VALUES (?, ?, ?)"
+    c.execute(command, (code, mark, ids))
 #==========================================================
 
+
+#this doesn't print anything. is it suppose to? how do we know the database worked?
+#c.execute("SELECT * FROM roster")
+
 db.commit() #save changes
+
+
 db.close()  #close database
