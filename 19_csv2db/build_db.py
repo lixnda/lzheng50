@@ -22,6 +22,8 @@ c.execute("CREATE TABLE roster (name TEXT, age INTERGER, id INTEGER)")
 c.execute("CREATE TABLE course (code TEXT, mark INTERGER, id INTEGER)")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 """
+c.execute("CREATE TABLE roster (name TEXT, age INTERGER, id INTEGER)")
+c.execute("CREATE TABLE course (code TEXT, mark INTERGER, id INTEGER)")
 
 file = open('students.csv', mode='r', newline='')
 csv_reader = csv.DictReader(file) #reads csv file as an ordered dictionary
@@ -46,7 +48,7 @@ for row in csv_reader:
 
 
 #this doesn't print anything. is it suppose to? how do we know the database worked?
-#c.execute("SELECT * FROM roster")
+c.execute("SELECT * FROM roster")
 
 db.commit() #save changes
 
