@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://cdn.tailwindcss.com"></script>
+		<style type="text/tailwindcss">
+      @layer utilities {
+      	.content-auto {
+      		content-visibility: auto;
+      	}
+      }
+		</style>
+    <title>Tailwind Site</title>
+  </head>
+  <body>
+    <div class="lg:content-auto bg-orange-600">
+        <h1 class="text-3xl font-bold underline bg-yellow-500 py-10 px-6"> <!--text-3xl refers to size, bg is background, px is left margin-->
+            ALL ABOUT STARS!
+        </h1>
+        <div class="bg-white dark:bg-amber-500 px-6 py-8 ring-1 ring-slate-900/5"> <!--numbers after colorname clarify brightness, py alters width-->
+            <h2 class="text-2xl font-bold dark:text-yellow-200">
+                What is a Star?
+            </h2>
+            <p class = "dark:text-yellow-100">
+                Stars are hot balls of gas, that generate energy and glow! They are neat. And they're very pretty. Usually they're made of hydrogen and helium!
+            <p>
+        </div>
+       <div class="bg-white dark:bg-orange-500 px-6 py-20 ring-1 ring-slate-900/5">
+            <h2 class="text-2xl font-bold dark:text-yellow-200">
+                What kinds of Stars Are there?
+            </h2>
+            <p class = "dark:text-yellow-100">
+                There are lots of different kinds of stars! They can be different sizes and colors and some burn hotter than others! There's dwarf stars (red, brown, yellow, black, white) and beetleguses and red giants and blue giants and protostars.
+            <p>
+        </div>
+        <br>
+		<div class="p-20 max-w-2xl mx-auto bg-yellow-200 rounded-xl shadow-lg flex items-left gap-x-10"> <!--max-w- is width -->
+			<div class="shrink-0">
+				<img class="w-40" src="sun.jpg" alt="Sun Image">
+			</div>
+			<div>
+				<div class="text-xl font-medium text-black">The Sun!</div>
+				<p class="text-slate-500">The Sun is a yellow dwarf star! It's the star the Earth orbits! It's part of the Milky Way</p>
+            </div>
+        </div>
+        <br>
+        <div class="bg-white dark:bg-red-500 px-6 py-20 ring-1 ring-slate-900/5">
+           <p class = "text-2xl font-bold dark:text-yellow-200">THE END</p>
+        </div>
+    </div>
+  </body>
+</html>
