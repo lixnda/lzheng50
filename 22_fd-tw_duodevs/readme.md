@@ -7,13 +7,15 @@ DISCO
         *In bootstrap, for example there were built in navbars, but in foundations the tags used was "top-bar" instead, which implies a wider ability to adjust it.
     *Bootstrap seems to be more focused on utility while Tailwind focuses more on customization,.==
     *Tailwind seems to have its own way of declaring colors (instead of using hexcode or rgb, you put color family and then a number showing how dark things are). It also has it's own way to show sides. Py and Px are margins (Px is left margin, py is height/width of box)
+    *Dark mode included on the website for tailwind
 
 QCC
     *Are div tags necessary for foundations?
 
-*q0: 3
+*q0: 4
 
 *q0b:
+Jady and Jack's how-to for foundations
 Tailwind CSS Colors - https://tailwindcss.com/docs/text-color 
 Tailwind CSS Font Size - https://tailwindcss.com/docs/font-size
 Devo-generated on-ramp used: Team Boaa (Ankita and Mark)
