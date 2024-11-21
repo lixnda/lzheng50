@@ -47,7 +47,7 @@ def main():
     print(nasa)
     """
         
-    return(render_template("main.html", title=title, img_url=img, description=explain, date=date ))
+    return(render_template("main.html", title=title, img_url=img, description=explain, date=date, copyright=copy))
 
 if __name__ == "__main__":
     app.debug = True
