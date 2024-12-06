@@ -33,6 +33,7 @@ NOTES:
         *AGG is the renderer for png filetypes but im not sure what it has to do with "main threads" (what is main threads??)
 *ro used to make plotted points red(r) and circle(o)
 *seems like numpy wasn't necessary (why do the matplotlib docs use them then)
+*need to denotate a new figure by declaring: "plt.figure()" in order to ensure no mixes happen btw two graphs
 """
 
 app = Flask(__name__)
@@ -72,6 +73,7 @@ def main():
     db.commit()
 
     #implicit way of graphing? one ax only
+    plt.figure()
     c.execute("SELECT * from snake")
     a = c.fetchall()
     for row in a:
@@ -84,6 +86,7 @@ def main():
     plt.savefig('static/foo.png')
 
     #explicits and with multiple row to display changes in different news stations
+    plt.figure()
     c.execute("SELECT * from news")
     b = c.fetchall()
     fig, axs = plt.subplots(6, 1, sharey=True, figsize=(8, 10)) #6 rows by 1 column (each subplot refered to as axs[index])
