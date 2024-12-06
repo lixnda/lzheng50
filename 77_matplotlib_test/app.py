@@ -47,7 +47,7 @@ def main():
     c.execute("CREATE TABLE IF NOT EXISTS snake(game INTEGER, length INTEGER)")
     c.execute("CREATE TABLE IF NOT EXISTS news(show TEXT, nine REAL, ten REAL, eleven REAL)")
 
-    with open('snakes_count_1000.csv', mode='r') as file:
+    with open('static/snakes_count_1000.csv', mode='r') as file:
         c.execute("DELETE FROM snake")
         data = csv.DictReader(file)
         for row in data:
@@ -57,15 +57,13 @@ def main():
             c.execute(command, (game, length))
     db.commit()
     
-    with open('news_decline.csv', mode='r') as file:
+    with open('static/news_decline.csv', mode='r') as file:
         c.execute("DELETE FROM news")
         data = csv.DictReader(file)
         print("Headers:", data.fieldnames)
-
-        #seems like headers have space in front of them, not sure why
         for row in data:
             show = row['show']
-            nine = row[' one']
+            nine = row[' one'] #seems like headers have space in front of them, not sure why
             ten = row[' two']
             eleven = row[' three']
             command = "INSERT INTO news VALUES(?, ?, ?, ?)"
@@ -88,8 +86,7 @@ def main():
     #explicits and with multiple row to display changes in different news stations
     c.execute("SELECT * from news")
     b = c.fetchall()
-    #6 rows by 1 column (each subplot refered to as axs[index])
-    fig, axs = plt.subplots(6, 1, sharey=True, figsize=(8, 10))
+    fig, axs = plt.subplots(6, 1, sharey=True, figsize=(8, 10)) #6 rows by 1 column (each subplot refered to as axs[index])
     num = 0
     for row in b:
         axs[num].plot((2009, 2010, 2011), (row[1], row[2], row[3]), '*-')
@@ -97,10 +94,9 @@ def main():
         axs[num].set_ylabel("average viewership")
         axs[num].set_xticks([2009, 2010, 2011])
         num+=1
-        
+    plt.tight_layout() #adjusts padding
 
     #usually, plt.show() can be used to display plot, but this function saves it as a png in the static folder
-    plt.tight_layout()
     fig.savefig('static/goo.png')
 
     return render_template("index.html")
