@@ -8,34 +8,6 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-
-"""
-procedure:
-* use sqlite to upload csv data into db
-* access db for plot values for matplotlib
-* save plot as png
-* serve in webapp
-
-documentations:
-* https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.subplots.html#matplotlib.pyplot.subplots
-
-sources:
-(different csv examples)
-* https://people.sc.fsu.edu/~jburkardt/data/csv/csv.html
-(how to save matplotlib as png:)
-*https://stackoverflow.com/questions/9622163/save-plot-to-image-file-instead-of-displaying-it
-
-NOTES:
-*pyplot is a submodule of matplotlib and is used to generate interactive plots? is efficient and simple to use
-*ran into error: " Terminating app due to uncaught exception 'NSInternalInconsistencyException', reason: 'NSWindow should only be instantiated on the main thread!'"
-    - seems to be an error specific to mac users
-    -SOLVED: "matplotlib.use('Agg')"
-        *AGG is the renderer for png filetypes but im not sure what it has to do with "main threads" (what is main threads??)
-*ro used to make plotted points red(r) and circle(o)
-*seems like numpy wasn't necessary (why do the matplotlib docs use them then)
-*need to denotate a new figure by declaring: "plt.figure()" in order to ensure no mixes happen btw two graphs
-"""
-
 app = Flask(__name__)
 
 @app.route("/")
@@ -72,7 +44,7 @@ def main():
 
     db.commit()
 
-    #implicit way of graphing? one ax only
+    #using pyplot
     plt.figure()
     c.execute("SELECT * from snake")
     a = c.fetchall()
@@ -85,7 +57,7 @@ def main():
 
     plt.savefig('static/foo.png')
 
-    #explicits and with multiple row to display changes in different news stations
+    #using oo-style. graph has multiple row to display changes in different news stations
     plt.figure()
     c.execute("SELECT * from news")
     b = c.fetchall()
