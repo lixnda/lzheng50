@@ -1,0 +1,7 @@
+DISCO:
+you can change the html element by dusing the dom function an specifiying "innerHTML" = ..
+to change a specific part of an element, for example, just selecting h1 selects all h1 elements, you can index through them to get whichever you want
+
+QCCs:
+how could you use a for loop or while loop to expedite the process when trying to change all list elements?
+why doesn't the dev console save when you reload the page?
