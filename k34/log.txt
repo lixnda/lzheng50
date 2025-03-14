@@ -1,11 +1,33 @@
-[heading]
+# Claire Song, Linda Zheng
+# StrawberryCoveredPretzels
+# SoftDev
+# K35 -- mxrobbotto
+# 2025-03-14
+# time spent: 1.3
+
 DISCO:
+The first version it generated used flask_sqlalchemy instead of SQLite.
+You have to give really specific instructions and the code didn't quite work the first time.
+It took us 8 tries to get all the requirements.
+
+Here are the modifications we made for each version:
+* v1: initial instructions for p00.
+* v2: There was an error in accessing a necessary function when we laucnhed the webapp. Fixed this issue.
+* v3: There was an error with the hash method "sha256." This shows the "generate_password_hash" method in __init__.py wasn't working as intended. Fixed this issue.
+* v4: We wanted to generate the blog without the use of flask_sqlalchemy so we gave copilot our requirement.txt from p00.
+* v5: Asked copilot explicitly to not use flask_sqlalchemy because giving just our requirements didn't work.
+* v6: There was an issue with viewing blogs when users create them. Fixed this issue.
+* v7: Other users were able to edit blogs that were not their own. Fixed this issue.
+* v8: Although users weren't able to edit other blogs thans their own, the edit button was still avaliable for all users. Fixed this isse.
 
 Q/C/C:
 some areas of interest...
-q0: How many tries did it take to "get it right?"
+q0: How many tries did it take to "get it right?" 
+8
 q1: Did you catch any errors? If so, how did you notice, and what did you do?
+* Yes, we caught many errors by testing out the webapp as different users. We identified this issue with copilot and asked copilot to update the code.
 q2: How similar or different is the bot's output to that of your past self / old team?
+They're more similar than we expected them to be, but there are some significant differences with how we decided to handle retrieving the blogs. When viewing blogs, we joined the blogs table with the username column from the users table so that we could have access to the username alongside all the information from the blogs table, and this would allow us to display the author's username. Copilot chose not to display the author's username. Also, our blogs table stored the title and the content, while copilot created one table for the title of the blog and one table for the entries, and it allowed users to add multiple entries to one single blog.
 
 
 __init__.py references:
