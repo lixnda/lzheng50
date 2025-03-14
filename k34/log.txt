@@ -1,0 +1,95 @@
+[heading]
+DISCO:
+
+Q/C/C:
+some areas of interest...
+q0: How many tries did it take to "get it right?"
+q1: Did you catch any errors? If so, how did you notice, and what did you do?
+q2: How similar or different is the bot's output to that of your past self / old team?
+
+
+__init__.py references:
+
+    github.com/Munoy/Munoy license
+    github.com/anurag247200/myapp license
+    github.com/yae1999/WebApp license
+    github.com/kitelife/JustABlog license
+    github.com/Robert-Rino/flask-login-exampleMIT license
+    github.com/GoldenEagle74/Lessons license
+    github.com/shobviznali/flask license
+    github.com/moncherid/User-registration- license
+    github.com/salmanghouridev/INSIGHT-EYE license
+    github.com/tinybike/SuperModular license
+    github.com/nicolewhite/neo4j-flask license
+    github.com/the-mausoleum/wordpress-deploy license
+    github.com/abhirathod95/Conquest license
+    github.com/romio-krvtsky/softarex-project license
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/VanLance/tom_capstone license
+    github.com/sspzoa/ThisIsProject license
+    github.com/Leticia-Neri/projetoTerca license
+
+register.html references:
+
+ Public code references from 5 repositories
+
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/Leticia-Neri/projetoTerca license
+    github.com/reckahawl/lifeLongLearner license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+
+login.html references:
+
+ Public code references from 6 repositories
+
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/Leticia-Neri/projetoTerca license
+    github.com/reckahawl/lifeLongLearner license
+    github.com/busyJayanth/crypto license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+
+index.html references:
+ Public code references from 6 repositories
+
+    github.com/moncherid/User-registration- license
+    github.com/romio-krvtsky/softarex-project license
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/Leticia-Neri/projetoTerca license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+
+create_blog.html references:
+ Public code references from 4 repositories
+
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+    github.com/Leticia-Neri/projetoTerca license
+
+view_blog.html references:
+ Public code references from 6 repositories
+
+    github.com/moncherid/User-registration- license
+    github.com/romio-krvtsky/softarex-project license
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+    github.com/Leticia-Neri/projetoTerca license
+
+add_entry.html references:
+ Public code references from 4 repositories
+
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+    github.com/Leticia-Neri/projetoTerca license
+
+edit_entry.html references:
+ Public code references from 4 repositories
+
+    github.com/baran61/Task-Manager-App-with-Python license
+    github.com/saini-harithas/Supermarket_Webpage license
+    github.com/grassLEE/general_api license
+    github.com/Leticia-Neri/projetoTerca license
