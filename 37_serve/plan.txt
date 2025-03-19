@@ -1,0 +1,6 @@
+Plan to create domain:
+* Download Nginx and ensure correct firewall privilages (for HTTP)
+* Create foistapp located in /var/www/foistapp/
+* Configure foistapp located in /etc/nginx/sites-avaliable/foistapp
+* create a symlink between configuration and /etc/nginx/sites-enabled/
+* restart nginx using: sudo systemctl restart nginx
